@@ -10,9 +10,9 @@ var VIPs = function() {
     return class VIPs {
         getName() { return "⭐ Favoris ⭐"; }
         getDescription() { return "Ajoute une section supplémentaire à la liste d'amis où vous pouvez ajouter vos contacts les plus importants sur Discord (Bots inclus). Ajoutez des utilisateurs en cliquant avec le bouton droit sur leur nom, en ouvrant leur profil, puis en cliquant sur l'étoile."; }
-        getVersion() { return "1.0"; }
+        getVersion() { return "1.1"; }
         getAuthor() { return "iDrunK"; }
-        getUpdateLink() { return "https://raw.githubusercontent.com/iDrunK/DiscordModif/master/VIPs.plugin.js"; }
+        getUpdateLink() { return "https://raw.githubusercontent.com/iDrunK65/DiscordModif/master/Favoris.js"; }
         load() {}
 
         constructor() {
