@@ -10,7 +10,7 @@ var VIPs = function() {
     return class VIPs {
         getName() { return "⭐ Favoris ⭐"; }
         getDescription() { return "Ajoute une section supplémentaire à la liste d'amis où vous pouvez ajouter vos contacts les plus importants sur Discord (Bots inclus). Ajoutez des utilisateurs en cliquant avec le bouton droit sur leur nom, en ouvrant leur profil, puis en cliquant sur l'étoile."; }
-        getVersion() { return "1.1"; }
+        getVersion() { return "1.2"; }
         getAuthor() { return "iDrunK"; }
         getUpdateLink() { return "https://raw.githubusercontent.com/iDrunK65/DiscordModif/master/Favoris.js"; }
         load() {}
@@ -312,7 +312,7 @@ var VIPs = function() {
         generateSettings(panel) {
             ZLibrary.PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
             new ZLibrary.Settings.SettingGroup("Paramètre des Favoris", {callback: () => {ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);}, shown: true}).appendTo(panel).append(
-                new ZLibrary.Settings.Switch("Ajouteur les VIP dans une catégorie", "", this.settings.VIPPinDMs, (checked) => {this.settings.VIPPinDMs = checked;}),
+                new ZLibrary.Settings.Switch("Ajouteur les Favoris dans une catégorie", "", this.settings.VIPPinDMs, (checked) => {this.settings.VIPPinDMs = checked;}),
                 new ZLibrary.Settings.Switch("Inclure les groups", "", this.settings.GroupDMs, (checked) => {this.settings.GroupDMs = checked;})
             );
         }
